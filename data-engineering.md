@@ -4,7 +4,7 @@
 
 Structured data is usually found in relational databases with clearly defined data types having patterns that make them easily searchable.
 
-On the other hand unstructured data is comprised of data that is usually not as easily searchable, including formats such as audio, video, and socal media postings.
+On the other hand unstructured data is comprised of data that is usually not as easily searchable, including formats such as audio, video, and social media postings.
 
 ## What makes a database relational?
 
@@ -22,13 +22,13 @@ Serverless computing is a form of abstraction where the backend services are man
 
 ## What is distributed processing?
 
-Involves simultaniously running an application/task on multiple processors to increase performance.
+Involves simultaneously running an application/task on multiple processors to increase performance.
 
 ## What is CSV? When would you use this file type?
 
 A Comma Separated Value file is a delimited text file that uses a comma to separate values. It is fast to write, but slow to read.
 
-It is very easy to comprehehend for both usders and computers and made more accessible via Microsoft Excel.
+It is very easy to comprehend for both users and computers and made more accessible via Microsoft Excel.
 
 ## What is JSON? When would you use this file type?
 
@@ -36,7 +36,7 @@ JavaScript Object Notation is the standard for communicating on the web.
 
 APIs and websites are constantly communicating using JSON thanks to its usability properties such as well-defined schemas.
 
-## What is Parqet? When would you use this file type?
+## What is Parquet? When would you use this file type?
 
 Parquet is a binary format containing metadata about its contents and is optimised for the Write Once Read Many (WORM) paradigm.
 
@@ -44,7 +44,7 @@ It is slow to write, but incredibly fast to read, especially when accessing subs
 
 ## How do you describe denormalised data?
 
-Denormalised data is used as a database optimisation technique by adding redundantcopies of data to one or more tables to improve read performance at the cost of write performance.
+Denormalised data is used as a database optimisation technique by adding redundant copies of data to one or more tables to improve read performance at the cost of write performance.
 
 ## What are the steps to build a DWH?
 
@@ -72,7 +72,7 @@ Test Driven Development involves converting software requirements into test case
 
 ## What is a distributed cache?
 
-A distributed cache supplements a primary database by removing unnecessary presure on it, typically in the form of frequently accessed read data. In this case, the cache spans multiple servers rather than a single locale.
+A distributed cache supplements a primary database by removing unnecessary pressure on it, typically in the form of frequently accessed read data. In this case, the cache spans multiple servers rather than a single locale.
 
 ## What are Functional and Non-Functional testing?
 
@@ -86,7 +86,7 @@ A data pipeline contains workflows with the aim of automating the movement and t
 
 ## What is containerisation?
 
-Bundling software code with all its necessary components into an isolated container to reproduce the evironment required to run on any system.
+Bundling software code with all its necessary components into an isolated container to reproduce the environment required to run on any system.
 
 ## What is orchestration?
 
@@ -95,3 +95,9 @@ Automates numerous tasks such as data extraction and transformation which may ru
 ## What is NoSQL?
 
 Databases built for specific non-tabular data models having flexible schemas.
+
+## What are real-time and batch processing?
+
+Batch processing involves processing large volumes of data collected over a period of time. Real-time processing collects and processes a large number of events in real-time.
+
+Both types of processing have their use cases and ultimately depend on business requirements when it comes to data readiness and volume.
