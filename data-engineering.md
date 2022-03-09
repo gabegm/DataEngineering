@@ -136,6 +136,39 @@ GraphQL provides a better way of querying APIs as it is more flexible than REST.
 
 ## What is the difference between Amazon EC2 and AWS Lambda?
 
-AWS Lambda lets you run code in a serverless environment while sacrificing flexibility such as OS, network, security settings, and the entire software stack.
+AWS Lambda lets you run code in a serverless environment while sacrificing flexibility such as OS, network, security settings, and the entire software stack. It is great for executing code in response to events such as changes made to Amazon S3 buckets or tables.
 
 Amazon EC2 is more flexible than AWS Lambda and provides you with a virtual server with a wide range of instance types.
+
+## What are transaction isolation levels?
+
+They define the degree to which a transaction must be isolated from the data modifications made by any other transaction in the database system.
+
+## Can you describe transaction isolation level phenomena?
+
+* Dirty read
+  * transaction reads data that has not yet been committed
+* Non repeatable read
+  * transaction reads the same row and gets a different value each team
+* Phantom read
+  * two same queries are executed but the rows retrieved are different
+
+## Can you describe the four isolation levels according to the SQL standard?
+
+* Read uncommitted
+  * lowest isolation
+  * one transaction made read not yet committed changes made by other transactions
+  * allows dirty reads
+  * transactions are not isolated from each other
+* Read committed
+  * any data is committed at the moment it is read
+  * prohibits dirty reads
+  * transaction holds a read or write lock on the current row
+  * prevents other transactions from reading, updating, or deleting it
+* Repeatable read
+  * most restrictive isolation level
+  * transaction holds read locks on all rows it references
+* Serializable
+  * highest isolation level
+  * guaranteed to be serializable
+  * execution of operations in which concurrently executing transactions appears to be serially executing
