@@ -101,3 +101,41 @@ Databases built for specific non-tabular data models having flexible schemas.
 Batch processing involves processing large volumes of data collected over a period of time. Real-time processing collects and processes a large number of events in real-time.
 
 Both types of processing have their use cases and ultimately depend on business requirements when it comes to data readiness and volume.
+
+## What is the difference between sharding and partitioning?
+
+Both are ways of splitting up large data sets into multiple smaller ones.
+
+Partitioning splits large databases into multiple smaller databases based on data cohesion such as accounts, sales, materials, etc.
+
+Sharding also splits up large datasets, however the split is done horizontally i.e. row-wise based on a key such as a customer unique identity.
+
+## What is the different between replication and clustering?
+
+Replication involves copying an entire table or database onto multiple servers to improve speed of access for accessing master data.
+
+Clustering is a technique used to improve performance for compute heavy tasks by using multiple application servers to access the same database.
+
+## Scale up vs. Scale out: What’s the difference?
+
+Scaling out or horizontally scaling refers to adding more components in parallel to spread out a load.
+
+Scaling up makes a component bigger or faster so that is can handle more load.
+
+It is not possible to keep scaling up due to hardware or cost limiting factors, and scaling horizontally will be required/more beneficial.
+
+## What is ACID?
+
+Atomicity, Consistency, Reliability, and Durability; the 4 key properties defining a transaction.
+
+Database operations having ACID properties are called ACID transactions, while data storage systems applying these operations are called transactional systems.
+
+## What is GraphQL?
+
+GraphQL provides a better way of querying APIs as it is more flexible than REST.
+
+## What is the difference between Amazon EC2 and AWS Lambda?
+
+AWS Lambda lets you run code in a serverless environment while sacrificing flexibility such as OS, network, security settings, and the entire software stack.
+
+Amazon EC2 is more flexible than AWS Lambda and provides you with a virtual server with a wide range of instance types.
