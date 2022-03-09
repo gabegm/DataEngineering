@@ -172,3 +172,29 @@ They define the degree to which a transaction must be isolated from the data mod
   * highest isolation level
   * guaranteed to be serializable
   * execution of operations in which concurrently executing transactions appears to be serially executing
+
+## What is a data cube?
+
+A multi-dimensional array of values typically found in multi-terabyte/petabyte data warehouses and time series of image data.
+
+## What is the difference between a data warehouse and a data lake?
+
+A data lake is a vast pool of raw data, the purpose for which is not yet defined.
+
+A data warehouse is a repository for structured, filtered data that has already been processed for a specific purpose.
+
+## ETL vs. ELT
+
+Extract Transform Load transforms data on a separate processing server, while Extract Load Transform transforms the data within the data warehouse itself.
+
+ETL does not transfer raw data into the data warehouse, while ELT sends raw data directly to the data warehouse.
+
+## Row wise vs. columnar storage: What’s the difference?
+
+Row wise data stores store and retrieve data one row at a time resulting in unnecessary data being read. Such data stores are best suited for online transaction systems as they are very easy to read and write to. However, they are not performant in analytical operations requiring entire data sets.
+
+Columnar data stores store and retrieve data in columns providing the possibility to only read the relevant data required. Such data stores are best suited for online analytical processing as they are highly efficient in performing operations applicable to entire data sets.
+
+## What is column expression?
+
+A column level operation that reduces the size of data when it is stored improving query performance.
