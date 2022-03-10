@@ -1,5 +1,5 @@
 # Road to Data Engineering
 
-* [Coding interviews](./python/)
-* [SQL interviews](./SQL.md)
-* [Data Engineering interviews](./data-engineering.md)
+* [Coding interviews](./dsa/)
+* [SQL interviews](./sql/SQL.md)
+* [Data Engineering interviews](./data-engineering/data-engineering.md)
