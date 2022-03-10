@@ -202,3 +202,14 @@ A column level operation that reduces the size of data when it is stored improvi
 ## What is Apache Kafka used for?
 
 It is used to build real-time streaming data pipelines and applications.
+
+## What is the CAP theorem?
+
+A theorem about distributed computing systems having 3 key properties.
+
+* Consistency
+  * data is up to date on all members of a distributed computing system
+* Availability
+  * data is always accessible for reading and updating
+* Partition tolerance
+  * distributed system continues to operate in the presence of a failure of the network where not all members can reach other members
