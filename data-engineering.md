@@ -198,3 +198,7 @@ Columnar data stores store and retrieve data in columns providing the possibilit
 ## What is column expression?
 
 A column level operation that reduces the size of data when it is stored improving query performance.
+
+## What is Apache Kafka used for?
+
+It is used to build real-time streaming data pipelines and applications.
