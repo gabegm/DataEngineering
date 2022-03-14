@@ -213,3 +213,18 @@ A theorem about distributed computing systems having 3 key properties.
   * data is always accessible for reading and updating
 * Partition tolerance
   * distributed system continues to operate in the presence of a failure of the network where not all members can reach other members
+
+## What is the difference between a unary relationship a binary relationship, and a ternary relationship?
+
+* Unary: one entity is involved in the relationship
+* Binary: two entities are involved in the relationship
+* Ternary: three entities are involved in the relationship
+* N-ary: n entities involved in the relationship
+
+## What is database federation?
+
+Splits up a database by function to reduce read and write traffic to each database, which results in less replication lag which plague large monolithic databases, at the cost of additional hardware and complexity.
+
+# What are load balancers?
+
+Load balancers distribute incoming client requests to computing resources such as application servers and databases to avoid single point of failures.
