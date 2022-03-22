@@ -256,3 +256,7 @@ It is maintenance technique used in Postgres to reclaim storage occupied by dead
 ## What are parallel queries?
 
 A method used to increase query execution performance by creating multiple query processes that divide the workload of a particular SQL statement and execute them in parallel.
+
+## What are table statistics?
+
+Statistical data collected on a table using sampling to inform the query planner for improved query execution performance.
