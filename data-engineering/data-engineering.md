@@ -110,6 +110,14 @@ Partitioning splits large databases into multiple smaller databases based on dat
 
 Sharding also splits up large datasets, however the split is done horizontally i.e. row-wise based on a key such as a customer unique identity.
 
+## What is range partitioning?
+
+A form of partitioning based on a predefined range for a specific data field such as unique identifiers, dates, or simple values such as currencies.
+
+## What is list partitioning?
+
+Another form of partitioning which assigns a range of discrete values to each partition.
+
 ## What is the different between replication and clustering?
 
 Replication involves copying an entire table or database onto multiple servers to improve speed of access for accessing master data.
@@ -225,6 +233,26 @@ A theorem about distributed computing systems having 3 key properties.
 
 Splits up a database by function to reduce read and write traffic to each database, which results in less replication lag which plague large monolithic databases, at the cost of additional hardware and complexity.
 
-# What are load balancers?
+## What are load balancers?
 
 Load balancers distribute incoming client requests to computing resources such as application servers and databases to avoid single point of failures.
+
+## What is indexing?
+
+A technique used to improve query execution performance by sorting a number of records based on multiple fields, creating a data structure which holds the field value, and a pointer to the record it relates to.
+
+The data structure is then sorted, allowing Binary Searches to be performed on it. This performance improvement comes at a cost of disk space.
+
+## What is a partial index?
+
+An index built over a subset of a table defined by a conditional expression called the predicate of the partial index.
+
+Only those entries which satisfy the predicate will contained in the index.
+
+## What is vacuum analyse?
+
+It is maintenance technique used in Postgres to reclaim storage occupied by dead tuples which were not physically removed from their table through delete or update operations.
+
+## What are parallel queries?
+
+A method used to increase query execution performance by creating multiple query processes that divide the workload of a particular SQL statement and execute them in parallel.
