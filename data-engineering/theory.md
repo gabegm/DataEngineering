@@ -286,3 +286,17 @@ In contrast views are generated tables created on the fly when they are accessed
 ## What are prepared statements?
 
 A parameterised and reusable SQL query where SQL commands and user provided data are kept separate from each other to be executed safely, preventing SQL injection vulnerabilities.
+
+## ER vs. Dimensional Modeling: What’s the difference?
+
+Two data modeling techniques, however ER modeling is used for Online Transaction Processing (OLTP) applications while dimensional modeling is suggested for Online Analytical Processing (OLAP).
+
+ER modeling consists of entities and relationships, optimises for CRUD activity, limits data redundancy, and promotes normalisation.
+
+Relational modeling consists of facts and dimensions, optimises for high select activity, and promotes data redundancy and de-normalisation.
+
+## OLTP vs. OLAP: What’s the difference?
+
+Both are forms of data processing. Online Transaction Processing (OLTP) captures, stores, and processes data from transactions in real time.
+
+Online Analytical Processing (OLAP) uses complex queries to analyse aggregated historical data from OLTP systems.
