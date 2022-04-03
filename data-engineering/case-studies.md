@@ -1,5 +1,13 @@
 # Questions
 
+| Step | Section             |
+| ---- | ------------------- |
+| 1    | Clarify Questions   |
+| 2    | Assess Requirements |
+| 3    | Solution            |
+| 4    | Validation          |
+| 5    | Additional Concerns |
+
 ## Social Media App
 
 You’re tasked with building a notification system for a simple Reddit-style app.
@@ -39,24 +47,15 @@ Should we want to also track reads and opens, as well as follow-through rates, w
 
 A webhook can be set up to run an update or insert command, however due to performance reasons we will mainly perform an insert.
 
-Depending on the refresh cadence for the ETL to pipe-out notification analytics...
+Depending on the refresh cadence for the ETL to pipe-out notification analytics, care will also needed to be taken to ensure data integrity is kept in check.
 
 If notifications are delayed...(backfill)
-
-## Retail Store
-
-You’re tasked with building a data pipeline for POS data from a store like Walmart
-
-This data will be used by data scientists. How would you do it?
 
 ## Dating App
 
 Design a database to represent a Tinder-style dating app
 
 What does the schema look like and what are some optimizations that you think we might need?
-
-## Solution
-
 ### Hypothesis
 
 Key capabilities of dating app:
@@ -117,12 +116,26 @@ Potential specific swiping feature goals:
 
 ### Design Implications
 
-Potential states represented numerically to save space:
+Potential states represented numerically to save space and kept simple:
 
 * user_a swipes right; user_b swipes left
 * user_a swipes left; user_b swipes right
 * user_a swipes right; user_b swipes right
 * user_a swipes left; user_b swipes left
+
+One extra state could be used to track when the user hasn't yet swiped on another user who has swiped right on them.
+
+## Trade-Offs and Optimisations
+
+Although indexing the locations table could improve query performance, it is not possible to do with the swipes table due to the nature of its size. One alternative would be to implement a sharded database design which would drastically improve performance.
+
+Another performance improvement could be to completely remove the swipes table and treat swipe events as a log event. This design cold be scaled out using a streaming service.
+
+## Retail Store
+
+You’re tasked with building a data pipeline for POS data from a store like Walmart
+
+This data will be used by data scientists. How would you do it?
 
 ## Music Database
 
