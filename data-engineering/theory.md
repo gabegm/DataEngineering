@@ -300,3 +300,42 @@ Relational modeling consists of facts and dimensions, optimises for high select 
 Both are forms of data processing. Online Transaction Processing (OLTP) captures, stores, and processes data from transactions in real time.
 
 Online Analytical Processing (OLAP) uses complex queries to analyse aggregated historical data from OLTP systems.
+
+## AWS SNS vs. AWS SQS: What’s the difference?
+
+AWS SNS is a publisher subscriber network, where subscribers can subscribe to topics and will receive messages whenever a publisher publishes to that topic.
+
+AWS SQS is a queue service, which stores messages in a queue.
+
+## Are Entity Type and Attribute the same?
+
+An entity type typically corresponds to one or several related tables in a database.
+
+Atrribute refers to a characteristic or trait of an entity type that describes the entity, for example, the Person entity type has the Date of Birth attribute.
+
+## What is the use of Snowpipe?
+
+Snowpipe is a Snowflake feature which enables loading data from files as soon as they're available in a stage table.
+
+This means you can load data from files in micro-batches, making it available to users within minutes, rather than manually executing COPY statements on a schedule to load larger batches.
+
+## What four key decisions made when designing a dimensional model?
+
+1. Select the business process
+2. Declare the grain
+3. Identify the dimensions
+4. Identify the facts
+
+## What does grain indicate in a dimensional data model?
+
+The finest level of detail of the dimensional model that is implioed when the fact and dimension tables are joined.
+
+For example, the granularity of a dimensional model that consists of the dimensions Date, Store, and Product is product sold in store by day.
+
+## What is atomic grain?
+
+The lowest level at which data is captured by a given business process.
+
+## What is a Star Schema?
+
+Dimensional structures deployed in databases characteristically consisting of fact tables linked to associated dimension tables via primary/foreign key relationships.
