@@ -2,7 +2,8 @@
 
 * [Coding tasks](./dsa/)
 * [SQL tasks](./sql/SQL.md)
-* [Data Engineering questions](./data-engineering/data-engineering.md)
+* [Theory](./data-engineering/theory.md)
+* [Case studies](data-engineering/case-studies.md)
 
 ## TODO
 
