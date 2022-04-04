@@ -339,3 +339,12 @@ The lowest level at which data is captured by a given business process.
 ## What is a Star Schema?
 
 Dimensional structures deployed in databases characteristically consisting of fact tables linked to associated dimension tables via primary/foreign key relationships.
+
+## Mention two ways in which data can be extracted from a database
+
+* Full or incremental extraction using SQL
+  * simple yet less scalable for large and frequently changing data sets
+  * full: all records from the table are extracted
+  * partial: only records which have changed or been added in the source table are extracted
+* Binary Log (binlog) replication
+  * complex yet more suitable for large and frequently changing data sets

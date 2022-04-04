@@ -286,12 +286,18 @@ What would the backend and data model look like?
 
 ## Social Feed
 
-You’re tasked with building a social feed system for a simple Twitter-style app
+You’re tasked with building a social feed system for a simple Twitter-style app.
 
 What would the backend and data model look like?
 
 ## Cloud Storage
 
-You’re tasked with building a cloud storage for a simple Dropbox-style app
+You’re tasked with building a cloud storage for a simple Dropbox-style app.
+
+What would the backend and data model look like?
+
+## Parking Lot
+
+You’re tasked with building the data warehouse infrastructure for a collection of parking lots.
 
 What would the backend and data model look like?
