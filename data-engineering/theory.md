@@ -340,7 +340,7 @@ The lowest level at which data is captured by a given business process.
 
 Dimensional structures deployed in databases characteristically consisting of fact tables linked to associated dimension tables via primary/foreign key relationships.
 
-## Mention two ways in which data can be extracted from a database
+## Mention two ways in which data can be extracted from a MySQL database
 
 * Full or incremental extraction using SQL
   * simple yet less scalable for large and frequently changing data sets
@@ -348,3 +348,9 @@ Dimensional structures deployed in databases characteristically consisting of fa
   * partial: only records which have changed or been added in the source table are extracted
 * Binary Log (binlog) replication
   * complex yet more suitable for large and frequently changing data sets
+  * logs the specifics of every table creation or modification, including every INSERT, UPDATE, and
+DELETE operation
+
+## What does CDC mean in databases?
+
+Change Data Capture is a process which identifies and tracks changes to data in a database. This allows real-time or neal-real-time movement of data by moving and processing data continuously as new database events occur.

@@ -301,3 +301,41 @@ What would the backend and data model look like?
 You’re tasked with building the data warehouse infrastructure for a collection of parking lots.
 
 What would the backend and data model look like?
+
+### Architect and Data Model
+
+| Drivers       |
+| ------------- |
+| id            |
+| license_plate |
+| car_fk        |
+
+| Cars          |
+| ------------- |
+| id            |
+| make          |
+| model         |
+
+| Lots          |
+| ------------- |
+| id            |
+| name          |
+| street        |
+| city          |
+| country       |
+| post_code     |
+| size          |
+
+| Events        |
+| ------------- |
+| id            |
+| name          |
+
+| Parking       |
+| ------------- |
+| id            |
+| date_time     |
+| fee           |
+| event_fk      |
+| driver_fk     |
+| lot_fk        |
