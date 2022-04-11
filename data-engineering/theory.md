@@ -354,3 +354,11 @@ DELETE operation
 ## What does CDC mean in databases?
 
 Change Data Capture is a process which identifies and tracks changes to data in a database. This allows real-time or neal-real-time movement of data by moving and processing data continuously as new database events occur.
+
+## What is a sink in Kafka?
+
+A sink connector delivers data from Kafka topics into other systems, which might be indexes such as Elasticsearch, batch systems such as Hadoop, or any kind of database.
+
+## Does the join order matter in SQL?
+
+There is no join order preference for `INNER JOIN`s as long as you are not executing a `SELECT *` on all tables. For other types of `JOIN`s, ideally a plan should start with the join that eliminates the most data to minimise the amount of data carried into the subsequent joins.
